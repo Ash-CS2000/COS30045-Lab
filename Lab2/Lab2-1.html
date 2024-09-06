@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start of D3</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <a href="Lab2-1.html"><button class="Lab2">Lab2-1</button></a>
+    <a href="Lab2-2.html"><button class="Lab2">Lab2-2</button></a>
+    <a href="Lab2-3.html"><button class="Lab2">Lab2-3</button></a>
+    <a href="Lab2-4.html"><button class="Lab2">Lab2-4</button></a>
+
+    
+    <h1>The D3 journey starts here</h1>
+
+    <script>
+
+
+        let dataset = [2, 5, 7, 23, 45];
+        let color=d3.color("red");
+
+        d3.select("body")
+        .selectAll("p")
+        .data(dataset)
+        .enter()
+        .append("p")
+        .style("color",function(d){
+            if(d>10){
+                return "red"
+            }
+        })
+        .text(function(d) {
+            if(d>10){
+                return "Warning: Joe watched " + d +" cats videos today ";
+            }
+            else {
+                return "Joe watched " + d + " cat videos today.";
+            }
+            
+        });
+
+
+        
+    </script>
+</body>
+
+<footer>
+    COS30045 Data Visualization<br>
+    Aung Si Hein
+</footer>
+</html>

@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.Lab2{
+    background-color: brown;
+    color: beige;
+}
+
+.Lab2:hover {
+    background-color: beige;
+    color: #a52a2a;
+}
+
+#chart{
+    width: 600px;
+    height: auto;
+    margin: auto;
+}
+
+footer{
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
